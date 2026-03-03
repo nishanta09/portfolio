@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Developer Portfolio - Glassmorphism Design">
+    <meta name="keywords" content="software developer, portfolio, glassmorphism, web development, frontend, backend">
+    <meta name="author" content="Nishant Kumar">
+    
+    <title>Nishant Kumar - Software Developer Portfolio</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/glassmorphism.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Inline critical styles for loading */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="glass-nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">NK.</a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="glass-card hero-card">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Nishant Kumar</span>
+                    </h1>
+                    <p class="hero-subtitle">Software Developer</p>
+                    <p class="hero-description">
+                        MCA graduate with 9-month internship experience in ASP.NET MVC and JavaScript. 
+                        Adaptable developer with hands-on exposure to Java and React, possessing strong backend problem-solving skills and a drive for professional growth.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="glass-button primary">View Projects</a>
+                        <a href="#contact" class="glass-button secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="glass-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-social">
+                <a href="https://github.com/nishanta09" target="_blank" class="social-link glass-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nishant-kumar-66037a187" target="_blank" class="social-link glass-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link glass-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:nishantsng.dev9@gmail.com" class="social-link glass-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title glass-text">About Me</h2>
+            
+            <div class="about-content">
+                <div class="glass-card about-card">
+                    <div class="about-text">
+                        <h3 class="about-title">Building Digital Excellence</h3>
+                        <p class="about-description">
+                            Software Developer with experience in ASP.NET MVC and JavaScript. 
+                            I love turning complex problems into simple, beautiful, and intuitive solutions. 
+                            When I'm not coding, you'll find me exploring new technologies or contributing to innovative projects.
+                        </p>
+                        
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>MCA from Patliputra University</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Experience</h4>
+                                    <p>9 Months at AAM Pune</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Pune, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item glass-stat">
+                            <h3 class="stat-number">9</h3>
+                            <p class="stat-label">Months Experience</p>
+                        </div>
+                        <div class="stat-item glass-stat">
+                            <h3 class="stat-number">4+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item glass-stat">
+                            <h3 class="stat-number">2</h3>
+                            <p class="stat-label">Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title glass-text">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="glass-card project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SSL Certificate Management Application</h3>
+                        <p class="project-description">
+                            Developed a web-based application to manage 100+ SSL certificates and licenses, 
+                            reducing renewal errors by 15% and improving system compliance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link glass-button small">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link glass-button small">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Chat bot API for Engineering Applications Tracker</h3>
+                        <p class="project-description">
+                            Developed a RESTful Web API with 5 endpoints to enable chatbot-based querying across 20+ servers, 
+                            improving response time by 20%.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">Web API</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link glass-button small">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link glass-button small">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Engineering Applications Tracker – Report Generator</h3>
+                        <p class="project-description">
+                            Developed a report generation module to display data for 50+ server names 
+                            using optimized INNER JOIN queries for accurate data extraction.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ASP.NET MVC</span>
+                            <span class="tech-tag">Entity Framework</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link glass-button small">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link glass-button small">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <div class="skills-header">
+                <h2 class="skills-title">Technical Skills</h2>
+                <p class="skills-subtitle">Mastering modern technologies to build innovative solutions</p>
+            </div>
+            
+            <!-- Central Hub -->
+            <div class="skills-center">
+                <div class="skills-hub">
+                    <div class="skills-hub-icon">💻</div>
+                    <div class="skills-hub-text">Skills Hub</div>
+                </div>
+            </div>
+            
+            <!-- Orbital Skills Cards -->
+            <div class="skills-orbit">
+                <!-- Frontend Development Card -->
+                <div class="skill-orbital-card">
+                    <div class="skill-orbital-header">
+                        <div class="skill-orbital-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-orbital-title">Frontend Development</h3>
+                    </div>
+                    <div class="skill-orbital-content">
+                        <div class="skill-list-new">
+                            <div class="skill-item-new">
+                                <div class="skill-header-new">
+                                    <span class="skill-name-new">HTML/CSS</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-new">
+                                    <div class="skill-progress-new" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-new">
+                                <div class="skill-header-new">
+                                    <span class="skill-name-new">JavaScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-new">
+                                    <div class="skill-progress-new" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-new">
+                                <div class="skill-header-new">
+                                    <span class="skill-name-new">React</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-new">
+                                    <div class="skill-progress-new" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Development Card -->
+                <div class="skill-orbital-card">
+                    <div class="skill-orbital-header">
+                        <div class="skill-orbital-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-orbital-title">Backend Development</h3>
+                    </div>
+                    <div class="skill-orbital-content">
+                        <div class="skill-list-new">
+                            <div class="skill-item-new">
+                                <div class="skill-header-new">
+                                    <span class="skill-name-new">C#</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-new">
+                                    <div class="skill-progress-new" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-new">
+                                <div class="skill-header-new">
+                                    <span class="skill-name-new">Java</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-new">
+                                    <div class="skill-progress-new" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-new">
+                                <div class="skill-header-new">
+                                    <span class="skill-name-new">ASP.NET</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-new">
+                                    <div class="skill-progress-new" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-new">
+                                <div class="skill-header-new">
+                                    <span class="skill-name-new">Spring Boot</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-new">
+                                    <div class="skill-progress-new" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies Card -->
+                <div class="skill-orbital-card">
+                    <div class="skill-orbital-header">
+                        <div class="skill-orbital-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="skill-orbital-title">Tools & Technologies</h3>
+                    </div>
+                    <div class="skill-orbital-content">
+                        <div class="tech-grid-new">
+                            <div class="tech-item-new">Entity Framework</div>
+                            <div class="tech-item-new">Cypress</div>
+                            <div class="tech-item-new">Postman</div>
+                            <div class="tech-item-new">VS Code</div>
+                            <div class="tech-item-new">Visual Studio</div>
+                            <div class="tech-item-new">Git</div>
+                            <div class="tech-item-new">REST APIs</div>
+                            <div class="tech-item-new">MVC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Particles -->
+        <div class="skills-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title glass-text">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="glass-card contact-card">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Let's Connect</h3>
+                        <p class="contact-description">
+                            I'm always interested in hearing about new projects and opportunities. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>nishantsng.dev9@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 7277910970</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pune, India</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <a href="https://github.com/nishanta09" target="_blank" class="social-link glass-icon" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nishant-kumar-66037a187" target="_blank" class="social-link glass-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link glass-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="mailto:nishantsng.dev9@gmail.com" class="social-link glass-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form glass-form" action="https://formspree.io/f/mvzbjerb" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" class="glass-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="glass-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="glass-input" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="glass-input glass-textarea" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="glass-button primary full-width">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Nishant Kumar. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="scripts/portfolio.js"></script>
+</body>
+</html>
